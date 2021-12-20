@@ -1,0 +1,94 @@
+//
+// LDAPProxy.RC - resources Microsoft Visual C++ does not edit directly
+//
+#include "resource.h"
+//#include "cmVersion.h"
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+//#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+#define VERSION_MAJOR			1
+#define VERSION_MINOR			3 
+#define VERSION_QFE				0
+#define VERSION_BUILD			70
+
+#define		_STR(x) #x
+#define		STR(x) _STR(x)
+#define		VERSION_NUMBER			VERSION_MAJOR,VERSION_MINOR,VERSION_QFE,VERSION_BUILD
+#define		VERSION_STRING			STR(VERSION_MAJOR) "." STR(VERSION_MINOR) "." STR(VERSION_QFE) "." STR(VERSION_BUILD)
+#define		VERSION_COMPANY			"Werfen"
+#define		VERSION_COPYRIGHT		"Copyright © 2022 Werfen"
+#define		VERSION_COMMENT			"Developed by SysteLab Technologies S.A. for Instrumentation Laboratory"
+#define     VERSION_TRANSLATION     L"1.0"
+#define     VERSION_STATUS          "Release"
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION VERSION_NUMBER
+ PRODUCTVERSION VERSION_NUMBER
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+			VALUE "Comments", VERSION_COMMENT "\0"
+			VALUE "CompanyName", VERSION_COMPANY "\0"
+            VALUE "FileDescription", "LDAP Interface"
+			VALUE "FileVersion", VERSION_STRING "\0"
+            VALUE "InternalName", "LDAPProxy.dll"
+			VALUE "LegalCopyright", VERSION_COPYRIGHT "\0"
+            VALUE "OriginalFilename", "LDAPProxy.dll"
+            VALUE "ProductName", "LDAPProxy.dll"
+			VALUE "ProductVersion", VERSION_STRING "\0"
+			VALUE "Translation Version", VERSION_TRANSLATION "\0"
+			VALUE "Translation Status", VERSION_STATUS "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+//#endif    // !_MAC
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
