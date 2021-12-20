@@ -45,10 +45,12 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <LinkKeyFile>inc_top\keySystelabSW.snk</LinkKeyFile>
+    <LinkKeyFile>
+    </LinkKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <LinkKeyFile>inc_top\keySystelabSW.snk</LinkKeyFile>
+    <LinkKeyFile>
+    </LinkKeyFile>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -119,9 +121,6 @@ xcopy /R /Y /I "$(TargetPath)" "$(SolutionDir)_Bin\"
     <ClCompile Include="Stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="inc_top\keySystelabSW.snk" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
